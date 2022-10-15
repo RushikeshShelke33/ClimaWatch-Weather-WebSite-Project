@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+</br>
+<a  class="btn btn-primary"align="left" href="http://127.0.0.1:5000/" role="button">Home</a>
+<h1 align="center">Login</h1>
+
+<form  method="post" class="container">
+    <fieldset>
+        <div class="msg"><h4>{{ msg }}</h4></div></br>
+        <legend>Login detail</legend>
+        <label>Id </label>
+    <input type="number"  class="form-control"  name="id" placeholder="Enter id" required><br>
+        <label>Password </label>
+    <input type="password"  class="form-control" placeholder="Enter Password" name="password" required><br>
+     <input type="submit" value="Submit" target="blank" class="btn btn-primary btn-lg" target="_blank" >
+        <p class="bottom">Don't have an account?  <a class="bottom" href="http://127.0.0.1:5000/Register">Please register here</a></p>
+    </fieldset>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+      
+            <span class="mb-3 mb-md-0 text-muted">© 2022 RDS, Inc</span>
+          </div>
+      
+        </footer>
+      </div>
+
+</body>
+
+</html>

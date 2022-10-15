@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    </br>
+    <a class="btn btn-primary" align="left" href="http://127.0.0.1:5000/" role="button">Home</a>
+    <h1 align="center">Registration
+    </h1>
+    <form action="{{ url_for('Register') }}" method="post" class="container">
+        <fieldset>
+            <div class="msg">
+                <h4>{{ msg }}</h4>
+            </div></br>
+            <legend>Employee detail</legend></br>
+            <label>Id </label>
+
+            <input type="number" class="form-control" name="id" placeholder="Enter id" required><br>
+            <label>Name </label>
+
+            <input type="text" class="form-control" placeholder="Enter your full name" name="name" required><br>
+
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Enter Email" name="email_id"><br>
+            <label>Mobile No</label>
+            <input type="number(10)" class="form-control" placeholder="Enter Mobile Number" name="mobileNo"><br>
+            <label>Password </label>
+            <input type="password" class="form-control" placeholder="Enter Password" name="password" required><br>
+
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg"><br><br>
+            <p class="bottom">Already have an account? <a class="bottom" href="http://127.0.0.1:5000/login"> Login In
+                    here</a></p>
+        </fieldset>
+
+    </form>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+      
+            <span class="mb-3 mb-md-0 text-muted">© 2022 RDS, Inc</span>
+          </div>
+      
+        </footer>
+      </div>
+</body>
+
+
+</html>
